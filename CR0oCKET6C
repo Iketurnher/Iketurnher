@@ -8,3 +8,70 @@
 Iketurnher/Iketurnher is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
+hello developer!
+welcome to progrgramminghub.
+lyon loves to teach python
+ file_input = open("read.txt",'r') 
+data = file_input.readline() 
+print(data)
+ file_input = open("read.txt",'r') 
+list = file_input.readlines(20) 
+print(list)
+ import time 
+epoch_time = 1613004173.957986 
+local_time = time.ctime(epoch_time) 
+print("The local time is:", local_time)
+The local time is:', 'Thu Feb 11 00:42:53 2021
+Let’s create a Table
+ import mysql.connector 
+db = mysql.connector.connect ( 
+host=“localhost”, 
+user=“yourusername”,  
+password=“yourpassword”,  
+database=“TestDB” 
+) 
+cursor = db.cursor ( ) 
+cursor.execute (“CREATE TABLE People (Name varchar(50), Age int, City varchar(50)” )
+Create operation
+ import mysql.connector 
+db = mysql.connector.connect ( 
+host=“localhost”, 
+user=“yourusername”,  
+password=“yourpassword”, 
+ database=“TestDB” 
+) 
+cursor = db.cursor ( ) 
+cursor.execute (“INSERT INTO TestDB.dbo.People (Name, Age, City) VALUES                
+	 ('Jack',26,'Sydney'),                 
+	 ('Maxi',32,'New York'),                 
+	 ('John',36,'Mexico') 
+” )
+ UPDATE PROGRAMMINGHUB SET duration='150 Hours' where category='Python'
+If you don’t use the where clause that means you are not targeting a particular row to be updated.
+In this case, all the rows will be updated. So be careful while using the UPDATE query.
+Use of commit() in our program means that you are committing the changes you made through the MySQL statement execution. If you forget to use the commit() no changes will be saved.
+ import tkinter as tk  
+win = Tk()  
+#you can add widgets here 
+win.mainloop()
+ from tkinter import *        
+win = Tk()  # win is a top or parent window 
+win.geometry("200x100")   
+b = Button(win, text = "Submit")   
+b.pack()  #using pack() geometry 
+win.mainloop()
+ from tkinter import *  
+root=Tk() 
+label1 = Label(root, text="hi, welcome to GUI using Tkinter") 
+label1.pack()  
+root.mainloop()
+ from tkinter import * 
+root =Tk() 
+c = Checkbutton(root, text = "Python") 
+c.pack()  
+c1 = Checkbutton(root, text = "C++") 
+c1.pack() 
+c2 = Checkbutton(root, text = "C") 
+c2.pack() 
+root.geometry("400x400") 
+root.mainloop()
